@@ -54,6 +54,14 @@ concretas
 **Propósito**. 
 
 * ~Abstract Factory vs Builder~. No se trata de una creación compleja
-…
+ …
 * ~Abstract Factory vs Facade~. No se trata de ocultar un subsistema 
-…
+ …
+
+**Rediseño**. Creando un objeto especificando una clase 
+explícitamente (*SpanishMenu y FrenchMenu*)
+
+**Variación**. Familias de objetos “producto” (derivadas de 
+*Menu*)
+
+
