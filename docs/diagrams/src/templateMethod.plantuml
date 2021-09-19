@@ -1,0 +1,80 @@
+@startuml templateMethod
+
+class CountryFactory <<abstractFactory>> <<singleton>> {
++ instance() : CountryFactory
++ getTicket() : Ticket
++ getMenu() : Menu
+}
+
+class Menu <<factoryMethod>> {
++ Menu()
+# setCommand() : void
+# set(ticket : Ticket) : void
++ execute (ticket : Ticket) : void
+- write() : void
+- getOption() : int
++ closed() : boolean
+}
+
+class Command <<command>> {
+# Command (title : String)
++ set (ticket : Ticket) : void
++ getTitle() : String
++ exeocute() : void
+}
+
+class SpanishMenu {
+# setCommands() : void
+}
+
+class FrenchMenu {
+# setCommands() : void
+}
+
+class ExitCommand {
+- closed : boolean
+# ExitCommand()
++ execute() : void
++ closed() : boolean
++ reset() : void
+}
+
+class SaleLineCommand {
++ saleLineCommand()
++ execute() : void
+}
+
+class CancellationLineCommand {
++ CancellationLineCommand()
++ execute() : void
+}
+
+class RepetitionLineCommand {
++ RepetitionLineCommand()
++ execute() : void
+}
+
+class ReturnLineCommand {
++ ReturnLineCommand()
++ execute () : void
+}
+
+CountryFactory -right-> Menu : #menu
+Menu -right-> "0.*" Command :#commandList
+Menu -down-> ExitCommand : - exitCommand
+Menu <|-down- SpanishMenu
+Menu <|-down- FrenchMenu
+Command <|-down- ExitCommand
+Command <|-down- SaleLineCommand
+Command <|-down- RepetitionLineCommand
+Command <|-down- CancellationLineCommand
+Command <|-down- ReturnLineCommand
+SpanishMenu ..> SaleLineCommand
+SpanishMenu ..> RepititionLineCommand
+SpanishMenu ..> CancellationLineCommand
+SpanishMenu ..> ReturnLineCommand
+FrenchMenu ..> SaleLineCommand
+FrenchMenu ..> RepetitionLineCommand
+FrenchMenu ..> CancellationLineCommand
+FrenchMenu ..> ReturnLineCommand
+@enduml

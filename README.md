@@ -80,3 +80,28 @@ diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones
 **Variación**. Cómo y cuándo una operación es gestionada
 
 ![Command](./docs/diagrams/out/Command.svg)
+
+**Problema**. No se desea complicar los algoritmos del *Menú* con la particularidad de cada país. 
+
+* Programando para la interfaz, no para la implementación: 
+*Template Method*
+
+**Intención**. Define el esqueleto de un algoritmo en una operación difiriendo algunos pasos a las subclases que redefinen esos pasos del algoritmo sin cambiar la estructura
+
+**Interrelación**. 
+
+**Propósito.** 
+* ~Template Methos vs Strategy~. No se requiere dinamismo …
+
+**Rediseño**. Dependencias algorítmicas de la configuración del menú por país
+
+**Variación**. Pasos de un algoritmo
+
+![templateMethod](./docs/diagrams/out/templateMethod.svg)
+
+
+
+
+
+
+
