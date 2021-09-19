@@ -40,4 +40,16 @@ pantalla gráfica de 12’’ mínimo; en España no hay
 descuentos globales y en Francia no hay descuentos por 
 línea; …
 
-
+**Problema**. No se desea que *Supermarket* se complique con 
+cada uno de los menús y tickets de cada país. 
+* Programar para la interfaz, no para la implementación: 
+*Abstract Factory*
+**Intención**. Provee una interfaz para crear familias de objetos 
+relacionados o dependientes sin especificar sus clases 
+concretas
+**Interrelación**. Singleton, Factory Method y Prototype
+**Propósito**. 
+ ^^Abstract Factory vs Facade^^. No se trata de ocultar un subsistema 
+…
+^^ Abstract Factory vs Builder^^. No se trata de una creación compleja 
+…
