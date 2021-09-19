@@ -79,4 +79,4 @@ diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones
 
 **Variación**. Cómo y cuándo una operación es gestionada
 
-![Command](./docs/diagrams/out/command.svg)
+![Command](./docs/diagrams/out/Command.svg)
