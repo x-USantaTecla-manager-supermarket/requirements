@@ -1,4 +1,6 @@
 # Cadena Internacional de Supermercados
+Universo Santa Tecla  
+[uSantaTecla@gmail.com](mailto:uSantaTecla@gmail.com)  
 
 Un supermercado internacional con cientos de centros repartidos por 23 países desea una gestión de tickets. 
 
@@ -64,4 +66,4 @@ explícitamente (*SpanishMenu y FrenchMenu*)
 **Variación**. Familias de objetos “producto” (derivadas de 
 *Menu*)
 
-
+![abstractFactory](.doc/diagrams/out/abstractFactory.svg)
