@@ -64,16 +64,16 @@ concretas
 
 **Problema**. No se desea complicar los algoritmos del Menú con la particularidad de cada país. 
 
-* Determinando la granularidad de los objetos : Command
+* Determinando la granularidad de los objetos : **Command**
 
 **Intención**. Encapsula un petición como un objeto, permitiendo de ese modo parametrizar clientes con 
 diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones de deshacer.
 
-**Interrelación**. Prototye, ~Memento y Composite
+**Interrelación**. *Prototye, ~Memento y Composite~*
 
 **Propósito**. 
 
-* ~Command vs Memento.~ No se trata de recuperar estados anteriores …
+* *~Command vs Memento.~* No se trata de recuperar estados anteriores …
 
 
 
