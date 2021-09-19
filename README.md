@@ -66,4 +66,4 @@ explícitamente (*SpanishMenu y FrenchMenu*)
 **Variación**. Familias de objetos “producto” (derivadas de 
 *Menu*)
 
-![abstractFactory](.doc/diagrams/out/abstractFactory.svg)
+![abstractFactory](.docs/diagrams/out/abstractFactory.svg)
