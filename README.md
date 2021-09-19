@@ -75,5 +75,8 @@ diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones
 
 * *~Command vs Memento.~* No se trata de recuperar estados anteriores …
 
+**Rediseño**. Dependencias de operaciones algorítmicas: podrá haber nuevas opciones
 
+**Variación**. Cómo y cuándo una operación es gestionada
 
+![Command](./docs/diagrams/out/command.svg)

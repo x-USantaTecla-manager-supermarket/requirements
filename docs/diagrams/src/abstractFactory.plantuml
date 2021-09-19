@@ -3,7 +3,7 @@ class Supermarket {
 -{static} CLOSING TIME: double = 20.0
 - Supermarket()
 - set(): void
-+{static} main(srgs : String"[]"
++{static} main(args : String"[]") : void
 }
 
 class CountryFactory <<abstractFactory>> <<singleton>> {

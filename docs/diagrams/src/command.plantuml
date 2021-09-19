@@ -1,0 +1,76 @@
+@startuml Command
+class Supermarket {
+-{static} CLOSING TIME: double = 20.0
+- Supermarket()
+- set(): void
++{static} main(args : String"[]") :void
+}
+
+class Menu <<factoryMethod>> {
++ Menu()
+# setCommands() :void
+# set(ticket: Ticket) : void
++ execute( ticket: Ticket) :void
+- write(): void
+- getOption() : int
++ closed() : boolean
+}
+
+class Command <<command>> {
+#Command (title : String)
++ set(ticket : Ticket) : void
++ getTitle() : String
++ execute() : void
+}
+
+class Ticket {
++ add(line : Line) : void
++ lines() : int
++ getLine (number : int) : Line
++ close() : void
++ toString() : String
++ Ticket(header, footer : Footer)
++ setLineTicketOperation (lineTicketOperation : TicketVisitor) : void
++ setGlobalTicketOperation( globalTicketOperation : TicketVisitor) : void
++ open(): void
+}
+
+class ExitCommand {
+- closed : boolean
+# ExitCommand()
++ execute() : void
++ closed() : boolean
++ reset() : void
+}
+
+class SaleLineCommand {
++ SaleLineCommand()
++ execute() : void
+}
+
+class RepetitionLineCommand {
++ RepetitionLineCommand()
++ execute() : void
+}
+
+class CancelationLineCommand {
++ CancelationLineCommand()
++ execute() : void
+}
+
+class ReturnLineCommand {
++ ReturnLineCommand()
++ execute() : void
+}
+
+Supermarket -down-> "- menu" Menu
+Supermarket .down.> Ticket
+Menu -right-> "0.*" Command :#commandList
+Command -right-> Ticket :#ticket
+Menu -down-> "- exitCommand" ExitCommand 
+Command <|-down- ExitCommand
+Command <|-down- SaleLineCommand
+Command <|-down- RepetitionLineCommand
+Command <|-down- CancelationLineCommand
+Command <|-down- ReturnLineCommand
+@enduml
