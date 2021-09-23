@@ -1,0 +1,207 @@
+@startuml visitorComposite
+
+class  TicketVisitor <<visitor>> {
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class TicketOperation {
++ set ( ticket : Ticket) : void
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class TicketOperationComposite <<composite>> {
++ TicketOperationComposite()
++ add (ticketOperation : TicketOperation) : void
++ set (ticket : Ticket) : void
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class TaxPrinterOperation {
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class BackupOperation {
++ visit (line : SaleLine) : void
++ visit ( line : RepititionLine) : void
++ visit (line : CancelationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class PriceCalculatorOperation {
++ PriceCalculatorOperation (ticket : Ticket)
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
+}
+
+class ScreenViewerOperation {
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class DisplayViewerOperation {
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class ClientPrinterOperation {
++ visit (saleLine : SaleLine) : void
++ visit ( repetitionLine : RepititionLine) : void
++ visit (cancelationLine : CancelationLine) : void
++ visit ( returnLine : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class ThreeXTwoOfertOperation {
++ visit (line : SaleLine) : void
++ visit (line : RepititionLine) : void
++ visit (line : CancelationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class TotalPriceCalculatorOperation
+
+class Supermarket {
+- {abstract}CLOSING TIME : double = 20.0
+- Supermarket()
+-sell(): void
++ {abstract}main (args : String "II") : void
+}
+
+class Ticket {
++ add (line : Line) : void
++ lines() : int
++ getLine (number : int) : Line
++ close() : void
++ toString() : String
++ Ticket ( header, footer: Footer)
++ setLineTicketOperation (lineTicketOperation : TicketVisitor) :void
++ open() : void
+}
+
+class Header {
++ head()
++ getdate() : Date
++ accept (ticketVisitor : TicketVisitor) : void
++ toString() : String
+}
+
+class Line {
+# price : int
++ setPrice (price : int) : void
++ getPrice() : int
++ accept (ticketVisitor : TicketVisitor) : void
++ toString() : String 
+}
+
+class Footer {
+- totalPrice : int
++ accept (ticketVisitor : TicketVisitor) : void
++ getTotalPrice() : int
++ toString : String
+}
+
+class IdLine {
+#id : int
+#units : int
+#IdLine (id : int,units : int)
++ getId() : int
++ getUnits() : int
++ toString() : String
+}
+
+class NumberLine {
+# number : int
+# NumberLine (number : int)
++ getNumber() : int
++ toString() : String
+}
+
+class SaleLine {
++ SaleLine( id: int,units :int)
++ accept( ticketVisitor : TicketVisitor) : void
++ toString() : String
+}
+
+class RepetitionLine {
++ RepetitionLine(number : int)
++ accept(ticketVisitor:TicketVisitor) : void
++ toString() : String
+}
+
+class ReturnLine {
++ ReturnLine( id : int, units : int)
++ accept(ticketVisitor : TicketVisitor) : void
++ toString() : String
+}
+
+class CancellationLine {
++ CancellationLine(number : int)
++ accept(ticketVisitor :TicketVisitor) : void
++ toString() : String
+}
+
+
+TicketVisitor ..> Header
+TicketVisitor ..> "-footer" Line
+TicketVisitor ..> Footer
+TicketVisitor "-lineTicketOperation" <-- Ticket
+TicketVisitor "-globalTicketOperation" <-- Ticket
+TicketVisitor <|-- TicketOperation
+TicketOperation"-ticketOperationList" <-- TicketOperationComposite
+TicketOperation <|-- TicketOperationComposite
+TicketOperation <|-- TaxPrinterOperation
+TicketOperation <|-- DisplayViewerOperation
+TicketOperation <|-- BackupOperation
+TicketOperation <|-- ClientPrinterOperation
+TicketOperation <|-- PriceCalculatorOperation
+TicketOperation <|-- ThereeXTwoOfertOperation
+TicketOperation <|-- ScreenViewerOperation
+TicketOperation <|-- TotalPriceCalculatorOperation
+TicketOperation "#ticket" --> Ticket
+Supermarket ..> Ticket
+Ticket "-header" --> Header
+Ticket --> "-lineList 0.*" Line
+Ticket --> Footer
+Line <|-- IdLine
+Line <|-- NumberLine
+IdLine <|-- SaleLine
+IdLine <|-- ReturnLine
+NumberLine <|-- RepetitionLine
+NumberLine <|-- CancellationLine
+
+@enduml
