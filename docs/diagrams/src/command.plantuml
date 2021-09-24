@@ -63,11 +63,11 @@ class ReturnLineCommand {
 + execute() : void
 }
 
-Supermarket -down-> "- menu" Menu
+Supermarket -down-> Menu :- menu
 Supermarket .down.> Ticket
 Menu -right-> "0.*" Command :#commandList
 Command -right-> Ticket :#ticket
-Menu -down-> "- exitCommand" ExitCommand 
+Menu -down-> ExitCommand :- exitCommand
 Command <|-down- ExitCommand
 Command <|-down- SaleLineCommand
 Command <|-down- RepetitionLineCommand

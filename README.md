@@ -2,17 +2,19 @@
 Universo Santa Tecla  
 [uSantaTecla@gmail.com](mailto:uSantaTecla@gmail.com)  
 
-Un supermercado internacional con cientos de centros repartidos por 23 países desea una gestión de tickets. 
+Un supermercado internacional con cientos de centros repartidos por **23 países** desea una gestión de tickets. 
 
-Un ticket consta de:
+Un **ticket** consta de:
 
-* **Cabecera**: con distintos campos dependiendo del país pero siempre el nombre el nombre de la cadena y la fecha y hora 
+* **Cabecera**: con distintos campos *dependiendo del país* pero siempre el nombre el nombre de la cadena y la fecha y hora 
 de comienzo del ticket de compra
+
 * **Cuerpo**:  Una secuencia de líneas que se expondrán posteriormente
-* **Pie**: con distintos campos dependiendo del país pero siempre el nombre el nombre de la cadena y la fecha y hora de 
+
+* **Pie**: con distintos campos *dependiendo del país* pero siempre el nombre el nombre de la cadena y la fecha y hora de 
 comienzo del ticket de compra
 
-Una línea puede ser:
+Una **línea** puede ser:
 
 * De **venta**, que refleja el código, descripción, unidades y precio
 
@@ -50,9 +52,10 @@ concretas
 
 **Propósito**. 
 
-* ~Abstract Factory vs Builder~. No se trata de una creación compleja
- …
 * ~Abstract Factory vs Facade~. No se trata de ocultar un subsistema 
+ …
+
+* ~Abstract Factory vs Builder~. No se trata de una creación compleja
  …
 
 **Rediseño**. Creando un objeto especificando una clase explícitamente (*SpanishMenu y FrenchMenu*)
@@ -100,7 +103,7 @@ diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones
 ![templateMethod](./docs/diagrams/out/templateMethod.svg)
 
 
-**Problema**. No se desea complicar los algoritmos del Ticket con la particularidad de cada país. 
+**Problema**. No se desea complicar los algoritmos del *Ticket* con la particularidad de cada país. 
 
 * Determinando la granularidad de los objetos : **Visitor**
 
@@ -162,12 +165,20 @@ independientemente del cliente que lo use
 **Intención**. Separa la construcción de un objeto complejo de 
 su representación de tal forma que el mismo proceso de construcción puede crear diferentes representaciones
 
-**Propósito**. 
+**Interrelación**. *Singleton, Composite, Abstract Factory/Prototype*
 
-**Interrelación**. ~Singleton, Composite, Abstract Factory/Prototype~
+**Propósito**. 
 
 **Rediseño**. Dependencias algorítmicas
 
 **Variación**. Cómo se crea un compuesto
 
+![builder](./docs/diagrams/out/builder.svg)
 
+**Visión general de clases principales**
+
+![overview](./docs/diagrams/out/overview.svg)
+
+**Arquitectura del software (jerarquía de paquetes)**
+
+![v5](./docs/diagrams/out/v5.svg)

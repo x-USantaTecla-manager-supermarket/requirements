@@ -72,7 +72,7 @@ class FrenchTicketBuilder {
 Supermarket .down.> CountryFactory
 
 Supermarket -down-> Menu
-CountryFactory "-countryFactury"<-- "menu" CountryFactory
+CountryFactory <-- "menu" CountryFactory :-countryFactury
 CountryFactory -right-> Menu :#ticketBuilder
 CountryFactory -right-> TicketBuilder
 CountryFactory <|-- SpanishFactory

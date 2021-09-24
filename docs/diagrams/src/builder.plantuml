@@ -1,0 +1,131 @@
+@startuml builder
+
+class CountryFactory <<abstractFactory>> <<singleton>> {
++{static} instance() : CountryFactory
++ getTicket() : Ticket
++ getMenu() : Menu
+}
+
+class TicketBuilder <<builder>> {
++{static}instance(): TicketBuilder
++ build() : Ticket
+}
+
+class TicketOperation {
++ set( ticket : Ticket) : void
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit(line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class SpanishTicketBuilder {
+~ SpanishTicketBuilder()
++ build() : Ticket
+}
+
+class FrenchTicketBuilder {
+~ FrenchTicketBuilder()
++ build() : Ticket
+}
+
+class TicketOperationComposite <<composite>> {
++ TicketOperationComposite()
++ set( ticket : Ticket) : void
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit(line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class TaxPrinterOperation {
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit(line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class DisplayViewerOperation {
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit( line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit ( footer : Footer) : void
++ visit (head) : void
+}
+
+class BackupOperation {
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit( line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit ( footer : Footer) : void
++ visit (head) : void
+}
+
+class ClientPrinterOperation {
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit( line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit ( footer : Footer) : void
++ visit (head) : void
+}
+
+class PriceCalculatorOperation {
++PriceCalculatorOperation (ticket: Ticket)
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit( line : CancellationLine) : void
++ visit (line : ReturnLine) : void
+}
+
+class ThreeXTwoOfertOperation {
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit(line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class ScreenViewerOperation {
++ visit (line : SaleLine) : void
++ visit (line : Repetitionine) : void
++ visit( line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class TotalPriceCalculatorOperation
+
+CountryFactory --> TicketBuilder : #ticketBuilder
+TicketBuilder <-- TicketBuilder :-ticketBuilder 
+TicketBuilder <|-- SpanishTicketBuilder
+TicketBuilder <|-- FrenchTicketBuilder
+SpanishTicketBuilder ..> TicketOperationComposite
+SpanishTicketBuilder ..> TaxPrinterOperation
+FrenchTicketBuilder ..> DisplayViewerOperation
+SpanishTicketBuilder ..> BackupOperation
+SpanishTicketBuilder ..> ClientPrinterOperation
+FrenchTicketBuilder ..> PriceCalculatorOperation
+SpanishTicketBuilder ..> ThreeXTwoOfertOperation
+TicketOperation "0..*" <-- TicketOperationComposite :-ticketOperationList
+TicketOperation <|-- TicketOperationComposite
+TicketOperation <|-- TaxPrinterOperation
+TicketOperation <|-- DisplayViewerOperation
+TicketOperation <|-- BackupOperation
+TicketOperation <|-- ClientPrinterOperation
+TicketOperation <|-- PriceCalculatorOperation
+TicketOperation <|-- ThreeXTwoOfertOperation
+TicketOperation <|-- ScreenViewerOperation
+TicketOperation <|-- TotalPriceCalculatorOperation
+
+@enduml

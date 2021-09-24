@@ -1,0 +1,30 @@
+@startuml v5
+
+package supermarket
+package frenchConfiguration
+package spanishConfiguration
+package countryConfiguration
+package menu
+package operations
+package utils
+package store
+package ticket
+
+supermarket ..> ticket
+supermarket ..> menu
+supermarket ..> countryConfiguration
+supermarket ..> store
+frenchConfiguration ..> menu
+frenchConfiguration ..> countryConfiguration
+frenchConfiguration ..> operations
+spanishConfiguration ..> menu
+spanishConfiguration ..> countryConfiguration
+spanishConfiguration ..> operations
+countryConfiguration ..> menu
+countryConfiguration ..> operations
+menu ..> utils
+menu ..> ticket
+operations ..> ticket
+operations ..> store
+
+@enduml

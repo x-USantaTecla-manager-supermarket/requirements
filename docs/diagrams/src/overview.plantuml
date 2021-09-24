@@ -1,0 +1,136 @@
+@startuml overview
+
+class Supermarket {
+-{static} Closing Time : double = 20.0
+- Supermarket()
+- sell() : void
++ main( args : String "II") : void
+}
+
+class Menu <<template method>> {
++ Menu()
+#{abstract} setCommands() : void
+# set(ticket : Ticket) : void
++ execute(ticket : Ticket) : void
+- write() : void
+- getOption() : int
++ closed() : boolean
+}
+
+class CountryFactory <<abstractFactory>> <<singleton>> {
++ {static} instance() : CountryFactory
++ getTicket() : Ticket
++ getMenu() : Menu
+}
+
+class Store <<singleton>> {
++ {static} instance() : Stire
+- Store()
++ detPrice( id:int, units:int) : int
++ add( id:int, units:int) : void
++ remove( id: int, units : int) : void
+}
+
+class TicketBuilder <<builder>> {
++ {static} instance() : TicketBuilder
++ {abstract} build() : Ticket
+}
+
+class Command <<command>> {
+# Command( title : String)
++ set(ticket : Ticket) : void
++ getTitle() : String
++ {abstract} execute() : void
+}
+
+class TicketOperation <<strategy>> {
++ set (ticket : Ticket) : void
++ visit (line : SaleLine) : void
++ visit (line : RepetitionLine) : void
++ visit (line : CancellationLine) : void
++ visit (line : ReturnLine) : void
++ visit (footer : Footer) : void
++ visit (head) : void
+}
+
+class Ticket {
++ add (line : Line) : void
++ lines() : int
++ getLine (number : int) : Line
++ close() : void
++ toString() : String
++ Ticket (header, footer : Footer)
++ setLineTicketOperation (lineTicketOperation : TicketVisitor) : void
++ setGlobalTicketOperation (globalTicketOperation : TicketVisitor) . void
++ open() : void
+}
+
+class TicketOperationComposite <<composite>> {
++ TicketOperationComposite()
++ add (ticketOperation : TicketOperation) : void
++ set (ticket : Ticket) : void
++ visit ( line : SaleLine) : void
++ visit ( line : RepetitionLine) : void
++ visit ( line : CancellationLine) : void
++ visit ( line : ReturnLine) : void
++ visit ( footer : Footer) : void
++ visit ( head) : void
+}
+
+class Header {
++ Head()
++ getDate() : Date
++ accept (ticketVisitor : TicketVisitor) : void
++ toString() : String
+}
+
+class Line {
+# price : int
++ setPrice( price : int) : void
++ getPrice() : int
++ {abstract} accept(ticketVisitor : TicketVisitor) : void
++ toString() : String
+}
+
+class TicketVisitor <<visitor>> {
++ {abstract} visit (line : SaleLine) : void
++ {abstract} visit (line : RepetitionLine) : void
++ {abstract} visit (line : CancellationLine) : void
++ {abstract} visit (line : ReturnLine) : void
++ {abstract} visit (footer : Footer) : void
++ {abstract} visit (head) : void
+}
+
+class Footer {
+- totalPrice : int
++ accept (ticketVisitor : TicketVisitor) : void
++ getTotalPrice() : int
++ toString() : String
+}
+
+Supermarket --> Menu :-menu
+Supermarket ..> Ticket
+Supermarket ..> CountryFactory
+Supermarket *--> Store
+CountryFactory <-- CountryFactory :-coutryFactory
+CountryFactory --> Menu : #menu
+CountryFactory --> TicketBuilder : #ticketBuilder
+Store <-- Store :-store
+Menu --> "0.*" Command
+TicketBuilder <-- TicketBuilder :-ticketBuilder
+TicketBuilder ..> Ticket :#globalTicketOperation
+TicketBuilder --> TicketOperation :#lineTicketOperation
+Command --> Ticket :#ticket
+TicketOperation -->  Ticket :#ticket
+TicketOperation ..> TicketVisitor
+TicketOperation <|-- TicketOperationComposite
+TicketOperation "0.*" <-- TicketOperationComposite : -ticketOperationList
+Ticket --> Header
+Ticket --> "0.*" Line
+Ticket --> Footer
+Ticket --> TicketVisitor :-globalTicketOperation
+Ticket --> TicketVisitor :-lineTicketOperation
+TicketVisitor ..> Header
+TicketVisitor ..> Line
+TicketVisitor ..> Footer
+@enduml

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="356px" preserveAspectRatio="none" style="width:679px;height:356px;background:#FFFFFF;" version="1.1" viewBox="0 0 679 356" width="679px" zoomAndPan="magnify"><defs><filter height="300%" id="f1tc3fu3hz0jvc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9bd072c12afa54b546bafae13596c5d5]
+entity supermarket--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="524,6,631,6,638,29.6094,655,29.6094,655,46.6094,524,46.6094,524,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="524" x2="638" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89" x="534" y="23.5332">supermarket</text><!--MD5=[06fc8032b7cf3dcf9403e1a44d0ac6c9]
+entity frenchConfiguration--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="244.5,6,404.5,6,411.5,29.6094,428.5,29.6094,428.5,46.6094,244.5,46.6094,244.5,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="244.5" x2="411.5" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="254.5" y="23.5332">frenchConfiguration</text><!--MD5=[d3bfe90f4da4ab5ef2376f98f401af81]
+entity spanishConfiguration--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="16,6,185,6,192,29.6094,209,29.6094,209,46.6094,16,46.6094,16,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="192" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="151" x="26" y="23.5332">spanishConfiguration</text><!--MD5=[918ff60cb38395a2ddef8dbfcff320d2]
+entity countryConfiguration--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="239,107,406,107,413,130.6094,430,130.6094,430,147.6094,239,147.6094,239,107" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="239" x2="413" y1="130.6094" y2="130.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="149" x="249" y="124.5332">countryConfiguration</text><!--MD5=[48af7236ebe878760a3516eafd0f9e45]
+entity menu--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="438,208,495,208,502,231.6094,519,231.6094,519,248.6094,438,248.6094,438,208" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="438" x2="502" y1="231.6094" y2="231.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="39" x="448" y="225.5332">menu</text><!--MD5=[1228233ccd09d7da8af5ad09a4f8ff0c]
+entity operations--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="275.5,208,369.5,208,376.5,231.6094,393.5,231.6094,393.5,248.6094,275.5,248.6094,275.5,208" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="275.5" x2="376.5" y1="231.6094" y2="231.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="76" x="285.5" y="225.5332">operations</text><!--MD5=[815e17c207bbf712f7f26918c1feb6f8]
+entity utils--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="437.5,309,485.5,309,492.5,332.6094,509.5,332.6094,509.5,349.6094,437.5,349.6094,437.5,309" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="437.5" x2="492.5" y1="332.6094" y2="332.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="30" x="447.5" y="326.5332">utils</text><!--MD5=[0686720d71d32ea68f81164171d509ce]
+entity store--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="314,309,369,309,376,332.6094,393,332.6094,393,349.6094,314,349.6094,314,309" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="314" x2="376" y1="332.6094" y2="332.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="37" x="324" y="326.5332">store</text><!--MD5=[3072bc1b1e0ae43056a7a6aa30bb4566]
+entity ticket--><polygon fill="#FEFECE" filter="url(#f1tc3fu3hz0jvc)" points="545,309,602,309,609,332.6094,626,332.6094,626,349.6094,545,349.6094,545,309" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="545" x2="609" y1="332.6094" y2="332.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="39" x="555" y="326.5332">ticket</text><!--MD5=[6c2aa9314ab8500374318a9caf2ce9fd]
+link supermarket to ticket--><path d="M610.94,47.09 C625.48,61.91 643.48,83.66 651.5,107 C672.02,166.68 672.93,189.64 651.5,249 C643.64,270.78 626.93,290.8 612.29,305.31 " fill="none" id="supermarket-to-ticket" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="608.62,308.87,617.8615,305.4648,612.2052,305.3848,612.2852,299.7285,608.62,308.87" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6dfed261944b2e8330187696c9471574]
+link supermarket to menu--><path d="M578.65,47.04 C558.26,83.78 514.26,163.06 491.99,203.19 " fill="none" id="supermarket-to-menu" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="489.39,207.88,497.2574,201.9552,491.8182,203.5092,490.2642,198.07,489.39,207.88" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f71bb2269c191cf49b70e6687f09f38c]
+link supermarket to countryConfiguration--><path d="M539.12,47.06 C495.99,63.81 433.99,87.87 389.56,105.12 " fill="none" id="supermarket-to-countryConfiguration" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="384.78,106.98,394.6181,107.4402,389.4389,105.165,391.7141,99.9859,384.78,106.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2951b2c182b19dcc4856203f422b7ae0]
+link supermarket to store--><path d="M590.32,47.22 C591,89.32 586.81,189.02 536.5,249 C517.94,271.13 445.9,298.17 397.93,314.32 " fill="none" id="supermarket-to-store" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="393.08,315.95,402.8864,316.8633,397.8177,314.3517,400.3292,309.283,393.08,315.95" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[cd1fa34b17764acc057ef42113895338]
+link frenchConfiguration to menu--><path d="M376.68,47.06 C400.64,60.7 429.75,81.09 447.5,107 C467.33,135.95 474.48,176.68 477.05,202.58 " fill="none" id="frenchConfiguration-to-menu" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="477.53,207.88,480.7157,198.5606,477.0864,202.8997,472.7472,199.2704,477.53,207.88" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[400c648d8a5b31eaa8507b551c0f05d4]
+link frenchConfiguration to countryConfiguration--><path d="M336.1,47.06 C335.79,62.79 335.34,84.98 335,101.91 " fill="none" id="frenchConfiguration-to-countryConfiguration" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="334.89,106.98,339.0692,98.0618,334.99,101.981,331.0708,97.9018,334.89,106.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9af29a86c7325c25601fd64f74b55830]
+link frenchConfiguration to operations--><path d="M288.94,47.07 C264.01,60.08 235.76,79.81 221.5,107 C213.04,123.14 213.1,131.83 221.5,148 C234.66,173.35 260.02,192.31 283.39,205.35 " fill="none" id="frenchConfiguration-to-operations" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="288.03,207.88,282.0443,200.0587,283.6405,205.4857,278.2135,207.0819,288.03,207.88" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7fea68a594c0742325e828e64e239742]
+link spanishConfiguration to menu--><path d="M125.21,47.17 C143.41,73.83 179.4,121.15 221.5,148 C230.63,153.82 361.54,192.97 432.89,214.07 " fill="none" id="spanishConfiguration-to-menu" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="437.93,215.56,430.4326,209.1733,433.135,214.143,428.1654,216.8453,437.93,215.56" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[11bd06ab65303ce5abb568f8f7dd320c]
+link spanishConfiguration to countryConfiguration--><path d="M156.36,47.06 C193.76,63.74 247.45,87.68 286.09,104.91 " fill="none" id="spanishConfiguration-to-countryConfiguration" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="290.73,106.98,284.1536,99.6485,286.1675,104.9347,280.8812,106.9485,290.73,106.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3a90a8183b7f2f06550e8a1cbe21799c]
+link spanishConfiguration to operations--><path d="M99.97,47.43 C85.6,73.11 66.66,117.99 88.5,148 C129.71,204.63 212.08,221.76 270.12,226.5 " fill="none" id="spanishConfiguration-to-operations" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="275.31,226.9,266.6453,222.2177,270.3249,226.5143,266.0283,230.1939,275.31,226.9" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[1f4e4cec5d069730ce6032450be33985]
+link countryConfiguration to menu--><path d="M362.95,148.06 C386.81,164.47 420.9,187.9 445.87,205.07 " fill="none" id="countryConfiguration-to-menu" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="450.11,207.98,444.9597,199.5851,445.9898,205.1474,440.4275,206.1774,450.11,207.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[41780eea151bee2d3659101bc9e40d25]
+link countryConfiguration to operations--><path d="M334.5,148.06 C334.5,163.79 334.5,185.98 334.5,202.91 " fill="none" id="countryConfiguration-to-operations" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="334.5,207.98,338.5,198.98,334.5,202.98,330.5,198.98,334.5,207.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[00da04c10a35ad8d01b8b6b6d0bb5dbf]
+link menu to utils--><path d="M477.51,249.06 C476.72,264.79 475.6,286.98 474.74,303.91 " fill="none" id="menu-to-utils" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="474.49,308.98,478.947,300.1973,474.7468,303.9866,470.9575,299.7864,474.49,308.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b4389e1d999d4cf0d2cfb4ea89369e6d]
+link menu to ticket--><path d="M499.64,249.06 C517.08,265.19 541.87,288.13 560.33,305.21 " fill="none" id="menu-to-ticket" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="564.4,308.98,560.4955,299.9382,560.7243,305.5904,555.0721,305.8192,564.4,308.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[62e07a0ef708ca5b3b2b79bd6eb6201a]
+link operations to ticket--><path d="M384.09,249.06 C429.44,266.95 495.98,293.19 540,310.55 " fill="none" id="operations-to-ticket" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="544.72,312.41,537.8232,305.3791,540.0708,310.5703,534.8796,312.8179,544.72,312.41" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c06376e61846580418a66deabf8d4d87]
+link operations to store--><path d="M338.25,249.06 C341.27,264.79 345.53,286.98 348.78,303.91 " fill="none" id="operations-to-store" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="349.75,308.98,351.9825,299.3875,348.8079,304.0696,344.1258,300.8949,349.75,308.98" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5f0d878365a4d7f70a43154a0a2dbae7]
+@startuml v5
+
+package supermarket
+package frenchConfiguration
+package spanishConfiguration
+package countryConfiguration
+package menu
+package operations
+package utils
+package store
+package ticket
+
+supermarket ..> ticket
+supermarket ..> menu
+supermarket ..> countryConfiguration
+supermarket ..> store
+frenchConfiguration ..> menu
+frenchConfiguration ..> countryConfiguration
+frenchConfiguration ..> operations
+spanishConfiguration ..> menu
+spanishConfiguration ..> countryConfiguration
+spanishConfiguration ..> operations
+countryConfiguration ..> menu
+countryConfiguration ..> operations
+menu ..> utils
+menu ..> ticket
+operations ..> ticket
+operations ..> store
+
+@enduml
+
+PlantUML version 1.2021.7(Sun May 23 14:40:07 CEST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: es
+Country: ES
+--></g></svg>

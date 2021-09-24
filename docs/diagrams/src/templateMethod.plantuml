@@ -1,7 +1,7 @@
 @startuml templateMethod
 
 class CountryFactory <<abstractFactory>> <<singleton>> {
-+ instance() : CountryFactory
++{static} instance() : CountryFactory
 + getTicket() : Ticket
 + getMenu() : Menu
 }
