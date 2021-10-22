@@ -20,17 +20,17 @@ concretas
 
 **Variación**. Familias de objetos “producto” (derivadas de *Menu*)
 
-![abstractFactory](./docs/diagrams/out/abstractFactory.svg)
+![abstractFactory](../out/abstractFactory.svg)
 
 
 **Problema**. No se desea complicar los algoritmos del Menú con la particularidad de cada país. 
 
 * Determinando la granularidad de los objetos : **Command**
 
-**Intención**. Encapsula un petición como un objeto, permitiendo de ese modo parametrizar clientes con 
+**Intención**. Encapsula una petición como un objeto, permitiendo de ese modo parametrizar clientes con 
 diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones de deshacer.
 
-**Interrelación**. *Prototye, ~Memento y Composite~*
+**Interrelación**. *Prototype, ~Memento y Composite~*
 
 **Propósito**. 
 
@@ -40,7 +40,7 @@ diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones
 
 **Variación**. Cómo y cuándo una operación es gestionada
 
-![Command](./docs/diagrams/out/Command.svg)
+![Command](../out/Command.svg)
 
 **Problema**. No se desea complicar los algoritmos del *Menú* con la particularidad de cada país. 
 
@@ -58,7 +58,7 @@ diferentes peticiones, colas o solicitudes registradas, y apoyar las operaciones
 
 **Variación**. Pasos de un algoritmo
 
-![templateMethod](./docs/diagrams/out/templateMethod.svg)
+![templateMethod](../out/templateMethod.svg)
 
 
 **Problema**. No se desea complicar los algoritmos del *Ticket* con la particularidad de cada país. 
@@ -113,7 +113,7 @@ independientemente del cliente que lo use
 
 **Variación**. Un algoritmo
 
-![visitorComposite](./docs/diagrams/out/visitorComposite.svg)
+![visitorComposite](../out/visitorComposite.svg)
 
 **Problema**. No se desea complicar los algoritmos del *Ticket* con la particularidad de cada país. 
 
@@ -131,12 +131,12 @@ su representación de tal forma que el mismo proceso de construcción puede crea
 
 **Variación**. Cómo se crea un compuesto
 
-![builder](./docs/diagrams/out/builder.svg)
+![builder](../out/builder.svg)
 
 **Visión general de clases principales**
 
-![overview](./docs/diagrams/out/overview.svg)
+![overview](../out/overview.svg)
 
 **Arquitectura del software (jerarquía de paquetes)**
 
-![v5](./docs/diagrams/out/v5.svg)
+![v5](../out/v5.svg)
