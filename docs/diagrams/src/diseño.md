@@ -139,4 +139,4 @@ su representación de tal forma que el mismo proceso de construcción puede crea
 
 **Arquitectura del software (jerarquía de paquetes)**
 
-![v5](../diagrams/out/v5.svg)
+![v5](../out/v5.svg)
